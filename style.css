@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid rgb(233, 231, 231); */
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+header {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+}
+
+header .brand-name a {
+  color: whitesmoke;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
+header .navbar {
+  color: rgb(238, 238, 56);
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .navbar ul li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+header .navbar ul li a {
+  color: white;
+  font-size: 20px;
+  line-height: 72px;
+  font-weight: 600;
+  position: relative;
+  display: block;
+}
+
+header .navbar ul li a.active::before {
+  content: " ";
+  height: 3px;
+  background-color: #ffffff;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.home {
+  min-height: 100vh;
+  background-image: url("images/3.jpg");
+  background-size: cover;
+  background-position: center;
+}
